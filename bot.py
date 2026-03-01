@@ -11,8 +11,10 @@ from telegram.ext import (
 
 # ==================== НАСТРОЙКИ ====================
 
-TELEGRAM_TOKEN = "8602350736:AAFg-cwNi0fYhZ4xbkNybevLLKD5cqBusY0"
-GROQ_API_KEY = "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"
+import os
+
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 # ==================== СИСТЕМНЫЕ ФРАЗЫ ====================
 
